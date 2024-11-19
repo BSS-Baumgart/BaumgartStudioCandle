@@ -1,0 +1,116 @@
+/* Styl dla belki informacyjnej */
+.site-header#masthead {
+	padding-top: 60px;
+}
+
+.top-info-bar {
+    position: fixed; /* Na komputerach belka jest przyklejona do góry */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Kolor tła */
+    color: #fff; /* Kolor tekstu */
+    display: flex; /* Użycie flexboxa do ułożenia elementów w jednej linii */
+    justify-content: center; /* Wyśrodkowanie tekstu */
+    align-items: center; /* Wyrównanie elementów w pionie */
+    padding: 10px 20px; /* Odstępy wewnętrzne */
+    z-index: 9999; /* Wyższy priorytet na komputerach */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    height: 50px;
+}
+
+.info-text {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+/* Styl dla ikon mediów społecznościowych */
+.social-icons {
+    display: flex; /* Użycie flexboxa do ustawienia ikon w poziomie */
+    gap: 10px; /* Odstęp między ikonami */
+    margin-left: auto; /* Ustawienie ikon po prawej stronie */
+}
+
+.social-icons img {
+        width: 34px;
+        height: 34px;
+    }
+
+/* Na urządzeniach mobilnych belka będzie częścią nagłówka */
+@media (max-width: 768px) {
+    .top-info-bar {
+        position: relative; /* Usunięcie przyklejania na mobile */
+        padding: 8px 10px; /* Mniejsze odstępy na telefonie */
+        font-size: 12px; /* Mniejszy tekst na telefonie */
+        height: auto; /* Wysokość automatyczna na telefonach */
+    }
+
+    .info-text {
+        font-size: 12px; /* Dostosowanie czcionki tekstu */
+    }
+
+    .social-icons {
+        gap: 4px; /* Mniejsze odstępy między ikonami */
+    }
+
+    .social-icons img {
+        width: 34px;
+        height: 34px;
+    }
+	.site-header#masthead {
+		padding-top: 110px;
+	}
+	
+}
+
+/* produkty o obrazki */
+
+.product-card__image-container img {
+	border-radius: 20px;
+}
+
+
+.product-card__actions a {
+	border-radius: 6px;
+}
+
+.btn-secondary {
+	border-radius: 6px;
+}
+
+.button {
+	border-radius: 6px;
+}
+
+/* Karta Produktu */
+
+.woocommerce-product-gallery img {
+    border-radius: 20px !important;
+}
+
+.swiper-wrapper img {
+    border-radius: 20px !important;
+}
+
+#pa_kolor {
+    border-radius: 6px !important;
+}
+
+.single_add_to_cart_button {
+    border-radius: 6px !important;
+}
+
+/* koszyk plus panel boczny jako koszyk */
+
+.widget_shopping_cart img {
+    border-radius: 6px !important;
+}
+
+.widget_shopping_cart a {
+    border-radius: 6px !important;
+}
+
+.product-thumbnail img {
+	border-radius: 20px !important;
+}
